@@ -1,0 +1,47 @@
+.cropped1 {
+    width: 700px; /* width of container */
+    height: 700px; /* height of container */
+    object-fit: cover;
+}
+
+.img-info{
+    position: absolute;
+    top: 500px;
+    left: 15%;
+    background-color: rgba(128, 128, 128, 0.301);
+    border-radius: 5px;
+    max-width: 25%;
+    text-align: center;
+}
+
+.highlight{
+    font-size: 38px;
+    align-items: center;
+    text-align: center;
+}
+
+.info{
+    background-color: rgb(255, 116, 61);
+    color: rgb(121, 48, 0);
+    font-family: 'Roboto';
+    font-weight: bold;
+    height: 250px;
+    width: 250px;
+}
+
+.rowcustom{
+    background-color: rgba(45, 255, 45, 0.795);
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.rowcustom h1 {
+    font-size: 30px;
+}
+
+.rowcustom img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
