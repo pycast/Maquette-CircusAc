@@ -1,17 +1,40 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right top, rgb(144,104,212), rgb(75,177,223));
+    color: black;
+    position: relative;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+
+.present {
+    background-color: #333;
+    background-image: url(./assets/img1.png);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 35vh 0;
+}
+
+.equipe-peda {
+    background-color: rgb(99, 99, 99);
+    background-image: url(./assets/cirque_enfants.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 15vh 0;
+}
+
 .cropped1 {
     width: 700px; /* width of container */
     height: 700px; /* height of container */
     object-fit: cover;
-}
-
-.img-info{
-    position: absolute;
-    top: 500px;
-    left: 15%;
-    background-color: rgba(128, 128, 128, 0.301);
-    border-radius: 5px;
-    max-width: 25%;
-    text-align: center;
 }
 
 .highlight{
@@ -29,9 +52,8 @@
     width: 250px;
 }
 
-.rowcustom{
-    background-color: rgba(45, 255, 45, 0.795);
-    border-radius: 10px;
+.row-pedagogie{
+    background-color: rgba(212,67,67);
     font-size: 25px;
 }
 
@@ -52,4 +74,35 @@
 
 .navbar {
     font-size: 24px;
+}
+
+.highlight1 {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 42);
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.highlight2 {
+    border-radius: 50%;
+    background-color: rgb(255, 57, 57);
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.highlight3 {
+    border-radius: 50%;
+    background-color: rgb(255, 62, 255);
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.highlight img {
+    max-width: 200px;
 }
