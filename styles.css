@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+    --circus-red: rgb(255, 57, 57);
+    --circus-green: rgb(158,212,80);
+    --circus-yellow: rgb(255,180,0);
+    --circus-purple: rgb(144,104,212);
+    --circus-blue: rgb(75,177,223);
+
+    --ff-title: 'Sedgwick Ave', cursive;
+    --ff-main: 'Roboto Condensed', sans-serif;
+}
+
 body{
     min-height: 100vh;
-    background: linear-gradient(to right top, rgb(144,104,212), rgb(75,177,223));
+    background: linear-gradient(to right top, var(--circus-purple), var(--circus-blue));
     color: black;
     position: relative;
+}
+
+.navbar {
+    font-size: 28px;
 }
 
 footer{
@@ -12,6 +31,8 @@ footer{
     background-color: rgba(255, 255, 255, 0.596);
 }
 
+/* PARALAX ACCUEIL */
+
 .present {
     background-color: #333;
     background-image: url(./assets/img1.png);
@@ -20,8 +41,50 @@ footer{
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 35vh 0;
+    padding: 30vh 0;
+    font-family: var(--ff-title);
 }
+
+/* LES POINTS IMPORTANTS */
+
+.highlight1 {
+    border-radius: 50%;
+    background-color: var(--circus-yellow);
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.highlight2 {
+    border-radius: 50%;
+    background-color: var(--circus-red);
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.highlight3 {
+    border-radius: 50%;
+    background-color: var(--circus-purple);
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.highlight img {
+    max-width: 200px;
+}
+
+.highlight{
+    font-size: 38px;
+    align-items: center;
+    text-align: center;
+}
+
+/* PEDAGOGIE */
 
 .equipe-peda {
     background-color: rgb(99, 99, 99);
@@ -37,24 +100,11 @@ footer{
     object-fit: cover;
 }
 
-.highlight{
-    font-size: 38px;
-    align-items: center;
-    text-align: center;
-}
-
-.info{
-    background-color: rgb(255, 116, 61);
-    color: rgb(121, 48, 0);
-    font-family: 'Roboto';
-    font-weight: bold;
-    height: 250px;
-    width: 250px;
-}
 
 .row-pedagogie{
-    background-color: rgba(212,67,67);
-    font-size: 25px;
+    background-color: rgba(255, 57, 57);
+    font-family: var(--ff-main);
+    font-size: 2rem;
 }
 
 .rowcustom h1 {
@@ -68,41 +118,33 @@ footer{
     transform: translate(-50%, -50%);
 }
 
+/* TEAM ANIM */
+
+.teamanim img {
+    height: 250px;
+    width: auto;
+    clip-path: circle();
+}
+
+/* ACTIVITES */
+
+.activitiescstm {
+    padding-left: 10em;
+}
+
 .activitiescstm p {
     font-size: 25px;
+    font-family: var(--ff-main);
 }
 
-.navbar {
-    font-size: 24px;
+.activitiescstm h1 {
+    font-family: var(--ff-title);
 }
 
-.highlight1 {
-    border-radius: 50%;
-    background-color: rgb(255, 255, 42);
-    align-items: center;
-    width: 250px;
+.activitiescstm img {
     height: 250px;
-    overflow: hidden;
+    width: 75%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.highlight2 {
-    border-radius: 50%;
-    background-color: rgb(255, 57, 57);
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-}
-
-.highlight3 {
-    border-radius: 50%;
-    background-color: rgb(255, 62, 255);
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-}
-
-.highlight img {
-    max-width: 200px;
-}
